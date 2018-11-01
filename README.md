@@ -222,4 +222,8 @@
         <th scope="row">Unicode编码中的汉字范围</th>
         <td>/^[\u2E80-\u9FFF]+$/</td>
     </tr>
+    <tr>
+        <th scope="row">获取cookie</th>
+        <td>RegExp("(^| )"+ name +"=([^;]*)(;|$)")</td>
+    </tr>
 </table>
