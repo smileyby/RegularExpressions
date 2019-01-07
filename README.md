@@ -226,4 +226,8 @@
         <th scope="row">获取cookie</th>
         <td>RegExp("(^| )"+ name +"=([^;]*)(;|$)")</td>
     </tr>
+    <tr>
+        <th scope="row">获取地址栏域名</th>
+        <td>/^http(s)?:\/\/([^/]*)\/(.*)/</td>
+    </tr>
 </table>
