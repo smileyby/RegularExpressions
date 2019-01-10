@@ -227,7 +227,11 @@
         <td>RegExp("(^| )"+ name +"=([^;]*)(;|$)")</td>
     </tr>
     <tr>
-        <th scope="row">获取地址栏域名</th>
+        <th scope="row">获取地址栏域名（1）</th>
         <td>/^http(s)?:\/\/([^/]*)\/(.*)/</td>
+    </tr>
+    <tr>
+        <th scope="row">获取地址栏域名（2）</th>
+        <td>/http(s)?:\/\/[a-zA-Z0-9][-a-zA-Z0-9]{0,62}(.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+(\.)?/</td>
     </tr>
 </table>
