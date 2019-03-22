@@ -1,6 +1,9 @@
 正则表达式速查表
 ==============
 
+> 正则表达式好文推荐
+>> https://github.com/ziishaned/learn-regex/blob/master/translations/README-cn.md
+
 <table>
     <tbody>
     <tr>
