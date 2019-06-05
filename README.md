@@ -248,7 +248,6 @@
        * value 本次第二个分组捕获的内容
       */
       let[res, key, value] = arg;
-      console.log(res);
       if (res.indexOf('#') > -1) {
         obj['hash'] = key;
         return;
