@@ -243,10 +243,10 @@
     reg = /[?&#]([^?&=#]+)(?:=([^?&=#]*))?/g;
     this.replace(reg, (...arg) = >{
       /*
-			 * res是本次大正则匹配的结果
-			 * key 本次第一个分组捕获的内容
-			 * value 本次第二个分组捕获的内容
-			*/
+       * res是本次大正则匹配的结果
+       * key 本次第一个分组捕获的内容
+       * value 本次第二个分组捕获的内容
+      */
       let[res, key, value] = arg;
       console.log(res);
       if (res.indexOf('#') > -1) {
