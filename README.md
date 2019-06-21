@@ -257,3 +257,32 @@
   }
 } ();
 ```
+
+```javascript
+//=> 高B格，检测数据类型封装
+~function(){
+    var obj = {
+        isNumber: 'Number',
+        isString: 'String',
+        isBoolean: 'Boolean',
+        isNull: 'Null',
+        isUndefined: 'Undefined',
+        isPlanObject: 'Obejct',
+        isArray: 'Array',
+        isRegExp: 'RegExp',
+        isFunction: 'Function'
+    };
+    var check = {};
+    for (var key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            var value = obj[key];
+            check[key] = (function(classValue){
+                return function(val){
+                    return new RegExp('\\[object '+ classValue +'\\]').test(Object.prototype.toString.call(val));
+                }
+            })(obj[key]);
+        }
+    }
+    window.check = check;
+}();
+```
