@@ -3,6 +3,16 @@
 
 > 正则表达式好文推荐
 >> https://github.com/ziishaned/learn-regex/blob/master/translations/README-cn.md
+> 划重点（慎用全局g）
+> 第二次匹配会返回false，是因为开启全局匹配后，会记录上一次匹配结束的位置即：**`lastIndex`**，下次会从lastIndex开始匹配
+
+```js
+var re = /^[1-9]\d{4,10}$/g;
+var str = "123456";
+alert(re.test(str));     //返回true
+str = "1234567";
+alert(re.test(str));     //返回false
+```
 
 <table>
     <tbody>
