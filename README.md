@@ -238,7 +238,7 @@ alert(re.test(str));     //返回false
     </tr>
     <tr>
         <th scope="row">获取cookie</th>
-        <td>RegExp("(^| )"+ name +"=([^;]*)(;|$)")</td>
+        <td>https://developer.mozilla.org/zh-CN/docs/Web/API/Document/cookie</td>
     </tr>
     <tr>
         <th scope="row">获取地址栏域名</th>
