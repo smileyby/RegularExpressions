@@ -252,7 +252,7 @@ alert(re.test(str));     //返回false
   String.prototype.myQuery = function myQuery() {
     let obj = {},
     reg = /[?&#]([^?&=#]+)(?:=([^?&=#]*))?/g;
-    this.replace(reg, (...arg) = >{
+    this.replace(reg, (...arg) => {
       /*
        * res是本次大正则匹配的结果
        * key 本次第一个分组捕获的内容
@@ -264,9 +264,10 @@ alert(re.test(str));     //返回false
         return;
       }
       obj[key] = value;
-    }) return obj;
+    }); 
+    return obj;
   }
-} ();
+}();
 ```
 
 ```javascript
