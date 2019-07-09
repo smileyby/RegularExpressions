@@ -2,7 +2,8 @@
 ==============
 
 > 正则表达式好文推荐
->> https://github.com/ziishaned/learn-regex/blob/master/translations/README-cn.md
+> * https://github.com/ziishaned/learn-regex/blob/master/translations/README-cn.md
+> * https://any86.github.io/any-rule/
 
 > 划重点（慎用全局g）
 > 第二次匹配会返回false，是因为开启全局匹配后，会记录上一次匹配结束的位置即：**`lastIndex`**，下次会从lastIndex开始匹配
