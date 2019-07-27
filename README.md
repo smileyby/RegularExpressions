@@ -252,7 +252,7 @@ alert(re.test(str));     //返回false
 ~function() {
   String.prototype.myQuery = function myQuery() {
     let obj = {},
-    reg = /[?&#]([^?&=#]+)(?:=([^?&=#]*))?/g;
+    reg = /[?&#]([^?&=#]+)(?:=([^&#]*))?/g;
     this.replace(reg, (...arg) => {
       /*
        * res是本次大正则匹配的结果
