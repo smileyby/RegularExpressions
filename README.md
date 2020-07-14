@@ -207,58 +207,6 @@ exp1(?!exp2) 查找后面不是exp2的exp1
 
 ## 常用正则表达式
 
-<table width="100%">
-    <tr>
-        <th width="8%">用户名</th>
-        <td width="92%">/^[a-z0-9_-]{3,16}$/</td>
-    </tr>
-    <tr>
-        <th scope="row">密码</th>
-        <td>/^[a-z0-9_-]{6,18}$/</td>
-    </tr>
-    <tr>
-        <th scope="row">十六进制值</th>
-        <td>/^#?([a-f0-9]{6}|[a-f0-9]{3})$/</td>
-    </tr>
-    <tr>
-        <th scope="row">电子邮箱</th>
-        <td>/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/<br />
-            /^[a-z\d]+(\.[a-z\d]+)*@([\da-z](-[\da-z])?)+(\.{1,2}[a-z]+)+$/</td>
-    </tr>
-    <tr>
-        <th scope="row">URL</th>
-        <td>/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/</td>
-    </tr>
-    <tr>
-        <th scope="row">IP 地址</th>
-        <td>/((2[0-4]\d|25[0-5]|[01]?\d\d?)\.){3}(2[0-4]\d|25[0-5]|[01]?\d\d?)/<br />/^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/</td>
-    </tr>
-    <tr>
-        <th scope="row">HTML 标签</th>
-        <td>/^&lt;([a-z]+)([^&lt;]+)*(?:&gt;(.*)&lt;\/\1&gt;|\s+\/&gt;)$/</td>
-    </tr>
-    <tr>
-        <th scope="row">删除代码\\注释</th>
-        <td>(?&lt;!http:|\S)//.*$</td>
-    </tr>
-    <!--  <tr>
-        <th scope="row">&nbsp;</th>
-        <td>&nbsp;</td>
-      </tr>-->
-    <tr>
-        <th scope="row">Unicode编码中的汉字范围</th>
-        <td>/^[\u2E80-\u9FFF]+$/</td>
-    </tr>
-    <tr>
-        <th scope="row">获取cookie</th>
-        <td>https://developer.mozilla.org/zh-CN/docs/Web/API/Document/cookie</td>
-    </tr>
-    <tr>
-        <th scope="row">获取地址栏域名</th>
-        <td>/^http(s)?:\/\/([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}(\/|\\\\|\?|$|:|\.)/</td>
-    </tr>
-</table>
-
 ```javascript
 //=> 匹配地址栏参数
 ~function() {
