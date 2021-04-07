@@ -190,6 +190,10 @@ alert(re.test(str));     //返回false
         <th>\u<span style="font-family:Times New Roman; font-style:italic;">n</span></th>
         <td>匹配<span style="font-family:Times New Roman; font-style:italic;">n</span>，其中<span style="font-family:Times New Roman; font-style:italic;">n</span>是一个用四个十六进制数字表示的Unicode字符。例如，\u00A9匹配版权符号（&copy;）。</td>
     </tr>
+    <tr>
+        <th>\u4e00-\u9fa5</th>
+        <td>匹配所有中文字符</td>    
+    </tr>    
     </tbody>
 </table>
 
