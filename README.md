@@ -263,3 +263,5 @@ exp1(?!exp2) 查找后面不是exp2的exp1
     window.check = check;
 }();
 ```
+
+normal test
